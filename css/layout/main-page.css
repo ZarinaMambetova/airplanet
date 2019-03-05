@@ -1,0 +1,14 @@
+.page-content {
+    display: flex;
+    padding-top: 45px;
+} 
+
+.route {
+        padding-left: 75px;
+}
+
+.route__image {
+
+    margin-top: -35px;
+}
+

@@ -1,0 +1,96 @@
+.header {
+    background-color: #4b73b5 ;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'robotobold';
+    height: 75px;
+    }
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.contacts__phone {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 17px;
+    font-style: normal;
+}
+.contacts__dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.contacts__dropdown_link {
+    font-style: normal;
+    text-decoration: underline;
+    display: flex;
+    justify-content: flex-end;
+    color: #c1cfe5;
+    
+
+}
+
+.contacts__dropdown_link:hover {
+    color: #fff;
+}
+
+
+.contacts__dropdown__menu {
+    position: absolute;
+    top: 100%;
+    background: #fff;
+    padding: 20px;
+    width: 164px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.5);
+    font-size: 14px;
+    margin-top: 10px;
+    left: -9999px;
+    transition: all .3s linear;
+    opacity:0;
+    }
+    .contacts__dropdown__menu:before {
+        content: "";
+        display: block;
+        height: 20px;
+        left: 0;
+        right: 0;
+        top: -19px;
+        position: absolute;
+}
+
+.contacts__dropdown:hover .contacts__dropdown__menu {
+    right: 0;
+    left: initial;
+    opacity: 1;
+}
+
+.contacts__dropdown__text {
+    color: #497ccf;
+    font-style: normal;
+    
+}
+
+.contacts__dropdown__text_black {
+    color: #221f1f;
+    font-family: 'robotolight';
+    font-style: normal;
+}
+
+.triangle {
+        
+    border-top: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    width: 0;
+    height: 0;
+    bottom: 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: 60px;
+       }
